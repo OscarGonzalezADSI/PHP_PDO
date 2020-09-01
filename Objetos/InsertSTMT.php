@@ -1,21 +1,23 @@
 <?php
+
 include "../Connection/PDOInsertSTMT.php";
 
+$origen = new PDOInsertSTMT();
+
+$base = "pruebaw";
+
+$SqlInsertPrepared = "INSERT INTO MyGuestsok (firstname, lastname, email)
+									VALUES (:firstname, :lastname, :email)";
+$firstname = "oscar";
+$lastname = "wwww";
+$email = "eeee";
+
+$Data =[
+   [$firstname, $lastname, $email],
+   ["jorge","buitrago","ddd@eee.com"]
+];
+	
 try {
-    $base = "myDBPDO";
-	
-    $SqlInsertPrepared = "INSERT INTO MyGuests (firstname, lastname, email)
-                                        VALUES (:firstname, :lastname, :email)";
-	$firstname = "oscar";
-	$lastname = "wwww";
-	$email = "eeee";
-	
-	$Data =[
-	   [$firstname,$lastname,$email],
-	   ["jorge","buitrago","ddd@eee.com"]
-	];
-	
-	$origen = new PDOInsertSTMT();
 	$origen->action($base, $SqlInsertPrepared, $Data);
 	$origen = null;
 	echo "OK. Insert Prepared Statements.";
