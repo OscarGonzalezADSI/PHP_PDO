@@ -1,6 +1,6 @@
 <?php
 
-include "Expo.php";
+include "PDOSelectSTMT.php";
 
 ?>
 <table style='border: solid 1px black;'>
@@ -13,12 +13,12 @@ include "Expo.php";
 $dbname = "myDBPDO";
 $SqlSelect = "SELECT * FROM MyGuests";
 try {
-  $Table = new Expo();
-  $Table -> action($dbname, $SqlSelect);
+  $origen = new PDOSelectSTMT();
+  $origen -> action($dbname, $SqlSelect);
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
-$conn = null;
+$origen = null;
 
 ?>
 </table>
