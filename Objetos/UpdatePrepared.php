@@ -4,7 +4,7 @@ include "../Connection/Connection.php";
 $servername = "localhost";
 $username = "username";
 $password = "password";
-$dbname = "pruebaw";
+$dbname = "pruebaw2";
 
 try {
   $conn = new Connection();

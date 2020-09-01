@@ -4,7 +4,7 @@ include "../Connection/PDOInsertSTMT.php";
 
 $origen = new PDOInsertSTMT();
 
-$base = "pruebaw";
+$base = "pruebaw2";
 
 $SqlInsertPrepared = "INSERT INTO MyGuestsok (firstname, lastname, email)
 									VALUES (:firstname, :lastname, :email)";

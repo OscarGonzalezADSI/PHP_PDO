@@ -1,7 +1,7 @@
 <?php
 include "../Connection/PDOCreateDatabase.php";
 
-$base = "pruebaw";
+$base = "pruebaw2";
 
 try {
   $origen = new PDOCreateDatabase();

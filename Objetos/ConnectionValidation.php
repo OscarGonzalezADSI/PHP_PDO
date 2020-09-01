@@ -4,7 +4,7 @@ include "../Connection/PDOConnectionValidation.php";
 
 try {
   $origen = new PDOConnectionValidation();
-  $dbname ="pruebaw";
+  $dbname ="pruebaw2";
   $origen->action($dbname);
   $origen = null;
   echo "Conexion estable.";

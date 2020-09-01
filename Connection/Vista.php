@@ -10,8 +10,8 @@ include "PDOSelectSTMT.php";
 	<th>Lastname</th>
 </tr>
 <?php
-$dbname = "myDBPDO";
-$SqlSelect = "SELECT * FROM MyGuests";
+$dbname = "pruebaw2";
+$SqlSelect = "SELECT * FROM MyGuestsok";
 try {
   $origen = new PDOSelectSTMT();
   $origen -> action($dbname, $SqlSelect);

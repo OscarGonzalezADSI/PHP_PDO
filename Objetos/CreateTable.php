@@ -1,7 +1,7 @@
 <?php
 include "../Connection/PDOCreateTable.php";
 
-$base = "pruebaw";
+$base = "pruebaw2";
 $nameTable = "MyGuestsok";
 $SqlCreateTable  = "CREATE TABLE ".$nameTable." (
 					id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
